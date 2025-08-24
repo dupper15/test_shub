@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.react-time-picker {
+  border-radius: 0.5rem;
+  border: 1px solid #cbd5e1; 
+  overflow: hidden; 
+}
+
+.react-time-picker__wrapper {
+  border: none !important;
+  padding: 0 !important;
+}
+
