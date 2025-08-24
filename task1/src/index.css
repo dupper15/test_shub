@@ -1,13 +1,67 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 .react-time-picker {
-  border-radius: 0.5rem;
-  border: 1px solid #cbd5e1; 
-  overflow: hidden; 
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 2px solid #e2e8f0;
+  background: white;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.react-time-picker:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.react-time-picker:focus-within {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
 .react-time-picker__wrapper {
   border: none !important;
-  padding: 0 !important;
+  padding: 12px 16px !important;
+  background: transparent;
 }
 
+.react-time-picker__inputGroup {
+  gap: 4px;
+}
+
+.react-time-picker__inputGroup__input {
+  padding: 4px 6px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  font-weight: 500;
+  font-size: 16px;
+  color: #374151;
+  background: #f8fafc;
+  transition: all 0.2s ease-in-out;
+}
+
+.react-time-picker__inputGroup__input:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+}
+
+.react-time-picker__inputGroup__input:focus {
+  outline: none;
+  background: white;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+.react-time-picker__inputGroup__divider {
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.react-time-picker__clear-button {
+  display: none;
+}
+
+.react-time-picker__clock-button {
+  display: none;
+}

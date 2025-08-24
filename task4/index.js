@@ -1,7 +1,7 @@
-const https = require("https");
+import { get, request } from "https";
 function getInput(url){
     return new Promise((resolve, reject) => {
-        https.get(url, (res) => {
+        get(url, (res) => {
             let data = '';
             res.on('data', (ans) => data += ans);
             res.on('end', () => {
@@ -26,7 +26,7 @@ function postOutput(url, token, results){
                 "Authorization": `Bearer ${token}`
             }
         }
-        const req = https.request(url, options, (res) => {
+        const req = request(url, options, (res) => {
             let responseData = "";
             res.on("data", ans => responseData += ans);
             res.on("end", () => resolve(responseData));

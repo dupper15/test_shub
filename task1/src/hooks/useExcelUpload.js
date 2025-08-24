@@ -7,7 +7,7 @@ export function useExcelUpload(initialData, initialMeta) {
   const [showError, setShowError] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
 
-  const handleUpload = async (e) => {
+  const handleUpload = async e => {
     const file = e.target.files[0];
     if (!file) return;
 

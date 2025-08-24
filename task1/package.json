@@ -7,7 +7,10 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "format:staged": "prettier --write $(git diff --cached --name-only --diff-filter=ACM | grep -E '\\.(js|jsx|ts|tsx|json|css|md)$')"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",

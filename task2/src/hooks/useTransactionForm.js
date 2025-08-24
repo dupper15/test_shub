@@ -14,4 +14,4 @@ export const useTransactionForm = () =>
     },
     mode: 'onSubmit',
     reValidateMode: 'onSubmit',
-});
+  });

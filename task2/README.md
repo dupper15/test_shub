@@ -1,19 +1,38 @@
-CÁCH THỰC HIỆN:
-- tạo project reactjs
-- cài tailwindcss để thuận tiện trong việc làm đẹp giao diện
-- bám sát đề bài (xác định các components, chức năng của components)
-- tinh chỉnh cho giao diện đẹp, code gọn lại để trông ngăn nắp, dễ hiểu, dễ bảo trì,...
+# 🚀 Hướng dẫn cài đặt & chạy dự án
 
-CẤU TRÚC DỰ ÁN:
--src:
--   components:
--           chứa các components đã được chia nhỏ, để dễ sử dụng, bảo trì, có thể tái sử dụng, 
-            code gọn hơn,...
--   schemas:
--           chứa schema để validate dữ liệu, đảm bảo tính chính xác và đầy đủ của thông tin
--   hooks:
--           chứa custom hook để làm việc với form gọn gàng hơn
+## 📌 Cách thực hiện
+- Tạo project **ReactJS**  
+- Cài **TailwindCSS** để thuận tiện trong việc làm đẹp giao diện  
+- Bám sát đề bài (xác định các **components**, chức năng của **components**)  
+- Tinh chỉnh để giao diện **đẹp, code gọn gàng, dễ hiểu, dễ bảo trì và tái sử dụng**  
 
-HƯỚNG DẪN THỰC THI:
-- chạy lệnh "npm install"
-- chạy lệnh "npm run dev"
+---
+
+## 📂 Cấu trúc dự án
+```bash
+src/
+│
+├── components/        # Chứa các components
+│   ├── forms/          # Các form nhỏ, tái sử dụng
+│   ├── layout/        # Layout chính của ứng dụng
+│   └── ui/            # UI components (modal)
+│
+├── schemas/           # Chứa schema validate dữ liệu
+│                      # Đảm bảo thông tin chính xác, đầy đủ
+│
+├── hooks/             # Custom hooks để làm việc gọn gàng hơn
+│
+└── App.jsx            # File chính của ứng dụng
+```
+
+## ⚙️ Hướng dẫn thực thi
+
+# Cài đặt dependencies
+```bash
+npm install
+```
+
+```bash
+# Chạy dự án
+npm run dev
+```

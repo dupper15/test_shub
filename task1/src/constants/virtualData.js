@@ -1,5 +1,5 @@
-export const virtualData = [
-    {
+export const VIRTUAL_DATA = [
+  {
     stt: '1',
     ngay: '2025-08-01',
     gio: '08:00',
@@ -56,4 +56,4 @@ export const virtualData = [
     bienSoXe: '31A-987.65',
     trangThaiHoaDon: 'Đã xuất',
   },
-]
+];
