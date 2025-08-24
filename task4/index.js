@@ -1,4 +1,4 @@
-import { get, request } from "https";
+const { get, request } = require("https");
 function getInput(url){
     return new Promise((resolve, reject) => {
         get(url, (res) => {
